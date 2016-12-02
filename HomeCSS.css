@@ -959,7 +959,7 @@ Image credits: unsplash.com
     color: #fff;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+    text-shadow: 2px 9px 27px rgba(8, 8, 8, 0.53);
     -webkit-transform: translate3d(-50%, -50%, 0);
     -moz-transform: translate3d(-50%, -50%, 0);
     -ms-transform: translate3d(-50%, -50%, 0);
@@ -1001,7 +1001,7 @@ Image credits: unsplash.com
     height: 100%;
     z-index: 2;
     background-color: #080d15;
-    opacity: .4;
+    opacity: .7;
 }
 
 /********************************/
@@ -1019,6 +1019,7 @@ Image credits: unsplash.com
     border-color: #175247;
     outline: none;
     margin: 20px auto;
+    box-shadow: 0 5px 50px rgba(0,0,0,0.4);
 }
 
 /********************************/
@@ -1035,15 +1036,15 @@ Image credits: unsplash.com
 
 .fade-carousel .slides .slide-1 {
     /*background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818);*/
-    background-image: url(Bilgewater_Wallpaper02.jpg);
+    background-image: url(images/Bilgewater_Wallpaper02.jpg);
 }
 
 .fade-carousel .slides .slide-2 {
-    background-image: url(softlogo.png);
+    background-image: url(images/bildgewater.jpg);
 }
 
 .fade-carousel .slides .slide-3 {
-    background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+    background-image: url(images/bildgewater2.jpg);
 }
 
 /********************************/
@@ -2362,6 +2363,7 @@ h2,
 h3,
 .h3 {
     font-size: 26px;
+    text-shadow: 2px 9px 27px rgba(8, 8, 8, 0.53);
 }
 h4,
 .h4 {
@@ -4261,26 +4263,26 @@ fieldset[disabled] .btn-primary.focus {
 }
 .btn-success {
     color: #ffffff;
-    background-color: #1a564a;
-    border-color: #293e30;
+    background-color: transparent;
+    border-color: transparent;
 }
 .btn-success:focus,
 .btn-success.focus {
     color: #ffffff;
-    background-color: #358753;
-    border-color: #183e26;
+    background-color: #1a564a;
+    border-color: #12332d;
 }
 .btn-success:hover {
     color: #ffffff;
-    background-color: #358753;
-    border-color: #2d3e35;
+    background-color: rgba(0, 0, 0, 0.28);
+    border-color: transparent;
 }
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
     color: #ffffff;
-    background-color: #358753;
-    border-color: #2b6e44;
+    background-color: #1a564a;
+    border-color: #12332d;
 }
 .btn-success:active:hover,
 .btn-success.active:hover,
@@ -5585,8 +5587,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 .navbar-default {
-    background-color: #333333;
-    border-color: #222222;
+    background-color: transparent;
+    border-color: transparent;
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
@@ -5605,15 +5607,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #ffffff;
-    background-color: #292929;
-    box-shadow: 0px -3px 0px #1a564a inset;
+	background-color: rgba(0, 0, 0, 0.22);
+    box-shadow: 0px -2px 0px #1a564a inset;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #ffffff;
-    background-color: #292929;
-    box-shadow: 0px -3px 0px #1a564a inset;
+    background-color: transparent;
+    box-shadow: 0px -2px 0px #1a564a inset;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
