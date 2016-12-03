@@ -8160,3 +8160,26 @@ input[type="checkbox"] {
 .modal .close {
     color: #222222;
 }
+
+
+.imageBokluk {
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+    .imageBokluk{
+        display: inline;
+    }
+    .container-fluid{
+        display: none;
+    }
+    .navbar-brand{
+        float: right;
+    }
+    .btn-default {
+        color: white;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+

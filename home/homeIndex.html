@@ -6,7 +6,9 @@
     <link rel="icon" href="http://i52.tinypic.com/r8tqo4.png">
 
     <link rel="stylesheet" href="homeStyle.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
 </head>
 
@@ -16,71 +18,111 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a href="homeIndex.html">
-                <img src="../images/LeagueOfSoftuni.png" class= "navbar-brand" style="position: fixed; width:19%; height:auto;"></a>
+                <img src="../images/LeagueOfSoftuni.png" class="navbar-brand"
+                     style="position: fixed; width:19%; height:auto;"></a>
 
         </div>
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="../gallery/galleryIndex.html">Gallery</a></li>
-            <li><a href="#">Lore</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a role="menuitem" tabindex="-1" href="#">Home</a></li>
+            <li><a role="menuitem" tabindex="-1" href="../gallery/galleryIndex.html">Gallery</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#">Lore</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><button href="#" class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-picture"></span> Upload</button></li>
-            <li><a href="../register/register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="../login/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <li>
+                <button href="#" class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-picture"></span>
+                    Upload
+                </button>
+            </li>
+            <li><a role="menuitem" tabindex="-1" href="../register/register.html"><span
+                    class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a role="menuitem" tabindex="-1" href="../login/login.html"><span
+                    class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
         </ul>
     </div>
+
+
+    <!-- Page responsive dropdown -->
+    <div class="imageBokluk">
+            <a href="homeIndex.html">
+                <img src="../images/LeagueOfSoftuni.png" class="navbar-brand"
+                     style="width:19%; height:auto;"></a>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="../gallery/galleryIndex.html">Gallery</a></li>
+                <li role="presentation"><a href="#">Lore</a></li>
+                <li role="presentation"><a href="#">Contact</a></li>
+                <li role="presentation">
+                    <button href="#" class="btn btn-success navbar-btn"><span
+                            class="glyphicon glyphicon-picture"></span>
+                        Upload
+                    </button>
+                </li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../register/register.html"><span
+                        class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../login/login.html"><span
+                        class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--------------------------------------------------->
+
 </nav>
 
 <!----------------------------------------------------------------------->
 <article>
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4500" id="bs-carousel">
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4500" id="bs-carousel">
 
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#bs-carousel" data-slide-to="1"></li>
-        <li data-target="#bs-carousel" data-slide-to="2"></li>
-    </ol>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+            <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item slides active">
-            <!-- Overlay -->
-            <div class="overlay"></div>
-            <div class="slide-1"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1>League</h1>
-                    <h3>of Software University</h3>
-                </hgroup>
-                <a href="../gallery/galleryIndex.html"><button class="btn btn-hero btn-lg" role="button">Go to Gallery</button></a>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <!-- Overlay -->
+                <div class="overlay"></div>
+                <div class="slide-1"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>League</h1>
+                        <h3>of Software University</h3>
+                    </hgroup>
+                    <a href="../gallery/galleryIndex.html">
+                        <button class="btn btn-hero btn-lg" role="button">Go to Gallery</button>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-2"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1>Lore</h1>
-                    <h3>Explore our Lore</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Go to Lore</button>
+            <div class="item slides">
+                <div class="slide-2"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Lore</h1>
+                        <h3>Explore our Lore</h3>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button">Go to Lore</button>
+                </div>
             </div>
-        </div>
-        <div class="item slides">
-            <div class="slide-3"></div>
-            <div class="hero">
-                <hgroup>
-                    <h1>Upload</h1>
-                    <h3>Post your picture</h3>
-                </hgroup>
-                <button class="btn btn-hero btn-lg" role="button">Upload</button>
+            <div class="item slides">
+                <div class="slide-3"></div>
+                <div class="hero">
+                    <hgroup>
+                        <h1>Upload</h1>
+                        <h3>Post your picture</h3>
+                    </hgroup>
+                    <button class="btn btn-hero btn-lg" role="button">Upload</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </article>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
