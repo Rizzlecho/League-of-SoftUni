@@ -1,6 +1,5 @@
 body {
-	background: url("../../images/Bilgewater_Wallpaper02.jpg") no-repeat center center fixed;
-	/*background: url("../../images/darkenOverlay.png") no-repeat center center fixed;*/
+	background: url("../../../../images/Bilgewater_Wallpaper02.jpg") no-repeat center center fixed;
 	background-size: cover;
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
@@ -11,7 +10,7 @@ body {
 
 /* Typography */
 h1#title {
-	/*font-family: 'Roboto Slab', serif;*/
+	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 	font-size: 3.2em;
 	color: white;
@@ -39,7 +38,7 @@ h2 {
 
 a {
 	text-decoration: none;
-	color: #888;
+	color: #666;
 }
 
 a:hover {
@@ -120,7 +119,7 @@ p.small {
 	font-weight: 400;
 	font-size: 0.7em;
 	letter-spacing: 1px;
-	background-color: #565656;
+	background-color: #665851;
 	cursor:pointer;
 	outline: none;
 }
@@ -135,10 +134,10 @@ p.small {
 	transition: 0.5s;
 }
 
-/*.selected {*/
-	/*color: #665851!important;*/
-	/*transition: 0.5s;*/
-/*}*/
+.selected {
+	color: #665851!important;
+	transition: 0.5s;
+}
 
 /* Animation Delay */
 #logo {
@@ -149,16 +148,4 @@ p.small {
 .login-box {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
-}
-
-/********************************/
-/*            Overlay           */
-/********************************/
-.overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 2;
-	background-color: #080d15;
-	opacity: .7;
 }
