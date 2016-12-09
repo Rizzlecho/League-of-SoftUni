@@ -5589,7 +5589,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 .navbar-default {
-    background-color: transparent;
+    background: url("../../images/navOverlay2.png") fixed;
     border-color: transparent;
 }
 .navbar-default .navbar-brand {
