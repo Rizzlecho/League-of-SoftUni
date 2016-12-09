@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');*/
 
 ul {
     list-style: none;
@@ -4205,9 +4205,9 @@ fieldset[disabled] .btn-default.focus {
     background-color: #333333;
 }
 .btn-primary {
-    color: #ffffff;
-    background-color: #008cba;
-    border-color: #0079a1;
+    color: #e6e6e6;
+    background-color: #1a564a;
+    border-color: #1a564a;
 }
 .btn-primary:focus,
 .btn-primary.focus {
