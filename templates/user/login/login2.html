@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SoftUni League</title>
-    <link rel="icon" href="http://i52.tinypic.com/r8tqo4.png">
+    <title>SoftUni Legends</title>
 
-    <link rel="stylesheet" href="galleryStyle.css">
-    <link rel="stylesheet" href="../user/login/loginStyle.css">
+    <link rel="stylesheet" href="../../home/homeStyle.css">
+    <link rel="stylesheet" href="loginStyle.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="../home/bootstrap.js"></script>
-    <script src="../user/login/login.js"></script>
+    <script src="../../home/bootstrap.js"></script>
+    <script src="login.js"></script>
 
 
 </head>
-
 <body>
+
+<!-- BEGIN # BOOTSNIP INFO -->
+<div class="container">
+    <div class="row">
+        <p class="text-center"><a href="#" class="btn btn-primary btn-lg" role="button" data-toggle="modal" data-target="#login-modal">Login</a></p>
+    </div>
+</div>
+<!-- END # BOOTSNIP INFO -->
 
 <!-- BEGIN # MODAL LOGIN -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
@@ -89,7 +95,6 @@
                         <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
                         <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
                         <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-                        <input id="register_password" class="form-control" type="password" placeholder="Confirm Password" required>
                     </div>
                     <div class="modal-footer">
                         <div>
@@ -111,75 +116,5 @@
 </div>
 <!-- END # MODAL LOGIN -->
 
-
-
-
-<!--------------------------------------------------------------------------------------------------------------------------->
-
-<nav class="navbar-right navbar-default navbar-fixed-top ">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="../homeIndex.html">
-                <img src="../../images/LeagueOfSoftuni.png" class="navbar-brand"
-                     style="position: fixed; width:19%; height:auto;"></a>
-
-        </div>
-        <ul class="nav navbar-nav">
-            <li><a role="menuitem" tabindex="-1" href="../homeIndex.html">Home</a></li>
-            <li class="active"><a role="menuitem" tabindex="-1" href="../gallery/galleryIndex.html">Gallery</a></li>
-            <li><a role="menuitem" tabindex="-1" href="../lore/loreIndex.html">Lore</a></li>
-            <li><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <button href="#" class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-picture"></span>
-                    Upload
-                </button>
-            </li>
-            <li><a role="menuitem" tabindex="-1" href="#"><span
-                    class="glyphicon glyphicon-user" role="button" data-toggle="modal" data-target="#login-modal"></span> Sign Up</a></li>
-            <li><a role="menuitem" tabindex="-1" href="#"><span
-                    class="glyphicon glyphicon-log-in" role="button" data-toggle="modal" data-target="#login-modal"></span> Login</a></li>
-        </ul>
-    </div>
-
-
-    <!-- Page responsive dropdown -->
-    <div class="imageBokluk">
-        <a href="../homeIndex.html">
-            <img src="../../images/LeagueOfSoftuni.png" class="navbar-brand"
-                 style="width:19%; height:auto;"></a>
-        <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span
-                    class="glyphicon glyphicon-th-list"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                <li role="presentation"><a href="../homeIndex.html">Home</a></li>
-                <li role="presentation" class="active"><a href="../gallery/galleryIndex.html">Gallery</a></li>
-                <li role="presentation"><a href="#">Contact</a></li>
-                <li role="presentation">
-                    <button href="#" class="btn btn-success navbar-btn"><span
-                            class="glyphicon glyphicon-picture"></span>
-                        Upload
-                    </button>
-                </li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="../user/register/register.html"><span
-                        class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="../user/not used login/login.html"><span
-                        class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-
-        </div>
-    </div>
-    <!--------------------------------------------------->
-
-</nav>
-
-
-
-
-
-
 </body>
 </html>
-
