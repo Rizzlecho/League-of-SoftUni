@@ -111,8 +111,6 @@
 <!-- END # MODAL LOGIN -->
 
 
-
-
 <!--------------------------------------------------------------------------------------------------------------------------->
 
 <nav class="navbar-right navbar-default navbar-fixed-top ">
@@ -130,15 +128,17 @@
             <li><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <button href="#" class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-picture"></span>
-                    Upload
-                </button>
-            </li>
-            <li><a role="menuitem" tabindex="-1" href="#"><span
-                    class="glyphicon glyphicon-user" role="button" data-toggle="modal" data-target="#login-modal"></span> Sign Up</a></li>
-            <li><a role="menuitem" tabindex="-1" href="#"><span
-                    class="glyphicon glyphicon-log-in" role="button" data-toggle="modal" data-target="#login-modal"></span> Login</a></li>
+            <!--<li>-->
+                <!--<a href="upload/uploadIndex.html">-->
+                <!--<button class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-picture"></span>-->
+                    <!--Upload-->
+                <!--</button></a>-->
+            <!--</li>-->
+            <li><a role="menuitem" tabindex="-1" href="upload/uploadIndex.html"><span class="glyphicon glyphicon-picture"></span> Upload</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal" data-target="#login-modal"><span
+                    class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal" data-target="#login-modal"><span
+                    class="glyphicon glyphicon-user" ></span> Login</a></li>
         </ul>
     </div>
 
@@ -157,7 +157,7 @@
                 <li role="presentation"><a href="gallery/galleryIndex.html">Gallery</a></li>
                 <li role="presentation"><a href="#">Contact</a></li>
                 <li role="presentation">
-                    <button href="#" class="btn btn-success navbar-btn"><span
+                    <button href="upload/uploadIndex.html" class="btn btn-success navbar-btn"><span
                             class="glyphicon glyphicon-picture"></span>
                         Upload
                     </button>
@@ -175,7 +175,6 @@
 
 
 </nav>
-
 
 
 <article>
@@ -223,7 +222,9 @@
                         <h1>Upload</h1>
                         <h3>Post your picture</h3>
                     </hgroup>
+                    <a href="upload/uploadIndex.html">
                     <button class="btn btn-hero btn-lg" role="button">Upload</button>
+                    </a>
                 </div>
             </div>
         </div>
