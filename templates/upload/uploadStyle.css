@@ -3671,6 +3671,7 @@ output {
     width: 600px;
     height: 39px;
     padding: 8px 12px;
+    margin-bottom: 30px;
     font-size: 15px;
     line-height: 1.4;
     color: #e6e6e6;
@@ -8059,10 +8060,15 @@ label,
 .help-block,
 .checkbox,
 .radio {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
     color: #c1c1c1;
 
+}
+
+label1 {
+    font-size: 18px;
+    color: #cecece;
 }
 input[type="radio"],
 input[type="checkbox"] {
