@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>SoftUni League</title>
     <link rel="icon" href="http://i52.tinypic.com/r8tqo4.png">
 
-    <link rel="stylesheet" href="uploadStyle.css">
+    <link rel="stylesheet" href="contactStyle.css">
     <link rel="stylesheet" href="../user/login/loginStyle.css">
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../home/bootstrap.js"></script>
@@ -121,7 +120,6 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------->
 
-
 <nav class="navbar-right navbar-default navbar-fixed-top ">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -134,10 +132,10 @@
             <li><a role="menuitem" tabindex="-1" href="../homeIndex.html">Home</a></li>
             <li><a role="menuitem" tabindex="-1" href="../gallery/galleryIndex.html">Gallery</a></li>
             <li><a role="menuitem" tabindex="-1" href="../lore/loreIndex.html">Lore</a></li>
-            <li><a role="menuitem" tabindex="-1" href="../contact/contactIndex.html">Contact</a></li>
+            <li class="active"><a role="menuitem" tabindex="-1" href="contactIndex.html">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a role="menuitem" tabindex="-1" href="uploadIndex.html"><span
+            <li><a role="menuitem" tabindex="-1" href="../upload/uploadIndex.html"><span
                     class="glyphicon glyphicon-picture"></span> Upload</a></li>
             <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal"
                    data-target="#login-modal"><span
@@ -162,17 +160,16 @@
                 <li role="presentation"><a href="../homeIndex.html">Home</a></li>
                 <li role="presentation"><a href="../gallery/galleryIndex.html">Gallery</a></li>
                 <li role="presentation"><a href="../lore/loreIndex.html">Lore</a></li>
-                <li role="presentation"><a href="../contact/contactIndex.html">Contact</a></li>
+                <li role="presentation" class="active"><a href="contactIndex.html">Contact</a></li>
                 <li role="presentation">
-                    <button href="#" class="btn btn-success navbar-btn"><span
+                    <button class="btn btn-success navbar-btn"><span
                             class="glyphicon glyphicon-picture"></span>
-                        Upload
+                        <a href="../upload/uploadIndex.html">Upload</a>
                     </button>
                 </li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="../user/register/register.html"><span
                         class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1"
-                                           href="../user/not%20used%20login/login.html"><span
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../user/not used login/login.html"><span
                         class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
 
@@ -180,31 +177,205 @@
     </div>
     <!--------------------------------------------------->
 
-
 </nav>
 
+<img src="../../images/darkenOverlay1.png" alt="Mountain View" style="width:2100px;height:60%; position: fixed; top:25%">
 
-<br><br><br><br><br><br><br>
-<div class="fon">
+<div id="map" style="width: 47%; height: 70%; margin-left: 50%; margin-top:15%; box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-out; border: solid 1px rgba(56, 53, 53, 0.92);
+    border-radius: 3px;"></div>
+<script>
 
-<form class="col-md-offset-4" style="margin-left: 7%">
-    <div class="form-group">
-        <label1 for="exampleTextarea">Title</label1>
-        <textarea class="form-control1" id="exampleTextarea" rows="1" placeholder="Add your title."></textarea>
-    </div>
-    <div class="form-group">
-        <label1 for="exampleTextarea">Description</label1>
-        <textarea class="form-control1" id="exampleTextarea1" rows="2" style="padding-bottom: 70px" placeholder="Add your description."></textarea>
-    </div>
-    <div class="form-group">
-        <label1 for="exampleInputFile">File input</label1>
-        <input style="width: 600px; background-color: rgba(58, 58, 58, 0.49);
-    border: 1px solid rgba(81, 82, 82, 0.52);" type="file" class="form-control-file btn btn-primary1"
-               id="exampleInputFile" aria-describedby="fileHelp">
-    </div>
-    <br>
-    <button type="submit" class="btn btn-lg btn-primary1">Upload</button>
-</form>
+    function initMap() {
+
+        // Create a new StyledMapType object, passing it an array of styles,
+        // and the name to be displayed on the map type control.
+        var styledMapType = new google.maps.StyledMapType(
+            [
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        {
+                            "color": "#000000"
+                        },
+                        {
+                            "lightness": 13
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#000000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#144b53"
+                        },
+                        {
+                            "lightness": 14
+                        },
+                        {
+                            "weight": 1.4
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#08304b"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#0c4152"
+                        },
+                        {
+                            "lightness": 5
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#000000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#0b434f"
+                        },
+                        {
+                            "lightness": 25
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#000000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry.stroke",
+                    "stylers": [
+                        {
+                            "color": "#0b3d51"
+                        },
+                        {
+                            "lightness": 16
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "color": "#000000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#146474"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#021019"
+                        }
+                    ]
+                }
+            ],
+            {name: 'Night Mode'});
+
+        // Create a map object, and include the MapTypeId to add
+        // to the map type control.
+        var myOptions = {
+            zoom: 12,
+            center: new google.maps.LatLng(42.6666605, 23.35068350000006),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 42.6666605, lng: 23.35068350000006},
+            zoom: 12,
+            mapTypeControlOptions: {
+                mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                    'styled_map']
+
+            }
+
+        });
+        marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng(42.6666605, 23.35068350000006)
+        });
+        infowindow = new google.maps.InfoWindow({content: '<strong> Софтуерен университет (СофтУни)</strong><br>улица „Тинтява“ 15-17, етаж 2<br> Sofia<br>'});
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+        infowindow.open(map, marker);
+
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+    }
+
+
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC17xb5NE_b6D7qGo6WGA7VEUldwMCX1Ms&callback=initMap"></script>
+
+<div class="tekst">
+    <h3>Софтуерен университет (СофтУни)</h3>
+    <h4> улица „Тинтява“ 15-17, етаж 2</h4>
+    <h4>Sofia</h4>
 </div>
+
+
 </body>
 </html>
+

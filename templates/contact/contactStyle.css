@@ -1087,21 +1087,27 @@ Image credits: unsplash.com
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
     font-family: sans-serif;
-
+    height: 70%;
 }
 
 body {
     margin: 0;
+    height: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
-    background: url("../../images/bilgewaterUpload.png") no-repeat center center fixed;
+    background: url("../../images/frejlord.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
+.tekst{
+    color: white;
+    margin-left: 13%;
+    margin-top: -18%;
+}
 article,
 aside,
 details,
@@ -5019,9 +5025,9 @@ fieldset[disabled] .btn-default.focus {
 }
 
 /*.btn-primary1:hover {*/
-    /*color: #ffffff;*/
-    /*font-size: 18px;*/
-    /*transition: all .5s ease;*/
+/*color: #ffffff;*/
+/*font-size: 18px;*/
+/*transition: all .5s ease;*/
 /*}*/
 
 .btn-primary:focus,
