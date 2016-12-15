@@ -5597,7 +5597,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 .navbar-default {
-    background: url("../../images/navOverlay2.png") fixed;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#050202+16,207cca+50,2989d8+50,050202+63,000000+100&0+2,1+19,0.02+41,0.02+51,0.02+60,0.02+69,0+77,1+100 */
+    background: -moz-linear-gradient(left, rgba(5,2,2,0) 2%, rgba(5,2,2,0.82) 16%, rgba(7,13,20,1) 19%, rgba(25,92,149,0.02) 41%, rgba(32,124,202,0.02) 50%, rgba(30,115,187,0.02) 51%, rgba(11,30,48,0.02) 60%, rgba(5,2,2,0.02) 63%, rgba(4,2,2,0.02) 69%, rgba(3,1,1,0) 77%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(5,2,2,0) 2%,rgba(5,2,2,0.82) 16%,rgba(7,13,20,1) 19%,rgba(25,92,149,0.02) 41%,rgba(32,124,202,0.02) 50%,rgba(30,115,187,0.02) 51%,rgba(11,30,48,0.02) 60%,rgba(5,2,2,0.02) 63%,rgba(4,2,2,0.02) 69%,rgba(3,1,1,0) 77%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(5,2,2,0) 2%,rgba(5,2,2,0.82) 16%,rgba(7,13,20,1) 19%,rgba(25,92,149,0.02) 41%,rgba(32,124,202,0.02) 50%,rgba(30,115,187,0.02) 51%,rgba(11,30,48,0.02) 60%,rgba(5,2,2,0.02) 63%,rgba(4,2,2,0.02) 69%,rgba(3,1,1,0) 77%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     border-color: transparent;
 }
 .navbar-default .navbar-brand {
