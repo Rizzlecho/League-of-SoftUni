@@ -4156,21 +4156,21 @@ fieldset[disabled] a.btn {
 }
 .btn-default:focus,
 .btn-default.focus {
-    color: #333333;
-    background-color: #cecece;
-    border-color: #8c8c8c;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 .btn-default:hover {
-    color: #333333;
-    background-color: #cecece;
-    border-color: #adadad;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    color: #333333;
-    background-color: #cecece;
-    border-color: #adadad;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -4181,9 +4181,9 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-    color: #333333;
-    background-color: #bcbcbc;
-    border-color: #8c8c8c;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 .btn-default:active,
 .btn-default.active,
@@ -5545,6 +5545,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-top: 0;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+    font-size: 108%;
 }
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
     margin-bottom: 0;
@@ -5645,8 +5646,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-    background-color: #272727;
+    background-color: rgba(39, 38, 38, 0.57);
     color: #ffffff;
+    box-shadow: 0px -2px 0px #1a564a inset;
 }
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -7894,7 +7896,7 @@ button.close {
     color: rgba(255, 255, 255, 0.5);
 }
 .navbar-default .dropdown-menu {
-    background-color: #333333;
+    background-color: rgba(2, 2, 2, 0.37);
 }
 .navbar-default .dropdown-menu > li > a,
 .navbar-default .dropdown-menu > li > a:focus {
@@ -7903,7 +7905,7 @@ button.close {
 .navbar-default .dropdown-menu > li > a:hover,
 .navbar-default .dropdown-menu > .active > a,
 .navbar-default .dropdown-menu > .active > a:hover {
-    background-color: #272727;
+    background-color: rgba(36, 36, 36, 0.63);
 }
 .navbar-inverse .dropdown-menu {
     background-color: #008cba;

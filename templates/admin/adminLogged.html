@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>SoftUni League</title>
-    <link rel="icon" href="http://i52.tinypic.com/r8tqo4.png">
+    <link rel="icon" href="../../images/L.jpg">
 
     <link rel="stylesheet" href="../home/homeStyle.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../home/bootstrap.js"></script>
+
 
 </head>
 
@@ -17,7 +18,7 @@
 <nav class="navbar-right navbar-default navbar-fixed-top ">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="loggedUser.html">
+            <a href="adminLogged.html">
                 <img src="../../images/LeagueOfSoftuni.png" class="navbar-brand"
                      style="position: fixed; width:19%; height:auto;"></a>
 
@@ -29,24 +30,12 @@
             <li><a role="menuitem" tabindex="-1" href="#">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li>
-                <button href="#" class="btn btn-success navbar-btn"><span class="glyphicon glyphicon-picture"></span>
-                    Upload
-                </button>
-            </li>
-            <!--<li><a role="menuitem" tabindex="-1" href="#"><span-->
-            <!--class="glyphicon glyphicon-chevron-down"></span> Admin</a></li>-->
-            <li>
-                <div class="dropdown">
-                    <button class="btn btn-success dropdown-toggle; glyphicon glyphicon-chevron-down" type="button"
-                            data-toggle="dropdown">Admin
-                        <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                    </ul>
-                </div>
+            <li><a role="menuitem" tabindex="-1" href="../upload/uploadIndex.html"><span class="glyphicon glyphicon-picture"></span> Upload</a></li>
+            <li><a class="dropdown dropdown-toggle" tabindex="-1" href="#" data-toggle="dropdown">Admin<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li style="color: #ffffff; background-color: transparent; box-shadow: 0px -1px 0px #4e4e4e inset;"><a href="#">Users</a></li>
+                    <li style="color: #ffffff; background-color: transparent; box-shadow: 0px -1px 0px #4e4e4e inset;"><a href="#">Posts</a></li>
+                </ul>
             </li>
             <li><a role="menuitem" tabindex="-1" href="#"><span
                     class="glyphicon glyphicon-user"></span> AdminName</a></li>
@@ -59,7 +48,7 @@
 
     <!-- Page responsive dropdown -->
     <div class="imageBokluk">
-        <a href="loggedUser.html">
+        <a href="adminLogged.html">
             <img src="../../images/LeagueOfSoftuni.png" class="navbar-brand"
                  style="width:19%; height:auto;"></a>
         <div class="dropdown">
@@ -69,16 +58,15 @@
             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
                 <li role="presentation" class="active"><a href="#">Home</a></li>
                 <li role="presentation"><a href="../gallery/galleryIndex.html">Gallery</a></li>
-                <li role="presentation"><a href="#">Lore</a></li>
-                <li role="presentation"><a href="#">Contact</a></li>
-                <li role="presentation">
-                    <button href="#" class="btn btn-success navbar-btn"><span
-                            class="glyphicon glyphicon-picture"></span>
-                        Upload
-                    </button>
+                <li role="presentation"><a href="../lore/loreIndex.html">Lore</a></li>
+                <li role="presentation"><a href="../contact/contactIndex.html">Contact</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="../upload/uploadIndex.html"><span class="glyphicon glyphicon-picture"></span> Upload</a></li>
+                <li role="presentation"><a class="dropdown dropdown-toggle" tabindex="-1" href="#" data-toggle="dropdown"><span class="caret"></span> Admin</a>
+                    <ul  role="presentation" class="dropdown-menu">
+                        <li role="presentation" style="color: #ffffff; background-color: transparent; box-shadow: 0px -1px 0px #4e4e4e inset;"><a href="#">Users</a></li>
+                        <li role="presentation" style="color: #ffffff; background-color: transparent; box-shadow: 0px -1px 0px #4e4e4e inset;"><a href="#">Posts</a></li>
+                    </ul>
                 </li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span
-                        class="glyphicon glyphicon-chevron-down"></span> Admin</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span
                         class="glyphicon glyphicon-user"></span> UserName</a></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="../homeIndex.html"><span
@@ -142,8 +130,6 @@
     </div>
 </article>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../home/bootstrap.js"></script>
 
 </body>
 </html>

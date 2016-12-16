@@ -6698,7 +6698,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:focus {
     color: #ffffff;
     background-color: transparent;
-    box-shadow: 0px -2px 0px #1a564a inset;
+    box-shadow: 0px -2px 0px #197d69 inset;
 }
 
 .navbar-default .navbar-nav > .disabled > a,
