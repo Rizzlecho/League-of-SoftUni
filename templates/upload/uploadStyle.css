@@ -4309,7 +4309,7 @@ output {
 .fon {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    background: url(../../images/darkenOverlay1.png) no-repeat center center fixed;
+    background: url(../../images/darkenOverlay1.png);
     /* height: 750px; */
     width: 36%;
     max-width: 130%;
@@ -4345,7 +4345,7 @@ output {
 
 .form-control1 {
     display: block;
-    width: 600px;
+    width: 90%;
     height: 39px;
     padding: 8px 12px;
     margin-bottom: 30px;
@@ -4356,7 +4356,7 @@ output {
     border: 1px solid rgba(81, 82, 82, 0.52);
     border-radius: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -9754,6 +9754,10 @@ input[type="checkbox"] {
         color: white;
         background-color: transparent;
         border-color: transparent;
+    }
+
+    .fon {
+        width: 80%;
     }
 }
 
