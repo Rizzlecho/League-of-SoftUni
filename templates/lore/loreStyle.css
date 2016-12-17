@@ -1099,7 +1099,7 @@ body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 
-    background: url("../../images/bildgewaterBlurred.png") no-repeat center center fixed;
+    background: url("../../images/bildgewaterLorepng.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2702,12 +2702,7 @@ h1,
 }
 
 
-h2,
-.h2 {
-    font-family: "Beaufort-Bold";
-    font-weight: bold;
 
-}
 
 
 
@@ -4315,6 +4310,19 @@ output {
     color: #6f6f6f;
 }
 
+.h2, h2:hover{
+    font-size: 38px;
+    transition: all .5s ease-out;
+
+}
+h2,
+.h2 {
+    font-family: "Beaufort-Bold";
+    font-weight: bold;
+    transition: all .5s ease-in;
+
+}
+
 .fon {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -4334,8 +4342,14 @@ output {
     padding-bottom: 100px;
     box-shadow: 0 5px 50px rgba(0, 0, 0, 0.72);
     -webkit-box-shadow: 0 5px 50px rgba(0, 0, 0, 0.72);
+    transition: all .5s ease-in;
 
 }
+
+/*.fon:hover{*/
+    /*font-size: 20px;*/
+    /*transition: all .5s ease-out;*/
+/*}*/
 
 .tekst {
     margin-top: -63%;
