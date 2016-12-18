@@ -9768,13 +9768,20 @@ input[type="checkbox"] {
     }
 
     .tekst {
-        margin-top: -55%;
-        margin-left: 25%
+        margin-top: -42%;
+        margin-left: 4%
     }
 
-    /*.karta {*/
-        /*margin-left: 28%;*/
-        /*margin-top:38%;*/
-    /*}*/
+    .tekst2 {
+        margin-left:4%;
+        margin-top: 6%;
+    }
+
+    #map {
+        margin-top:-14%;
+        left:-1%;
+        margin-left: 15%;
+        top:24%;
+    }
 }
 
