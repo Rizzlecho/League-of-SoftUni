@@ -4310,7 +4310,7 @@ output {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     /*background: url(../../images/darkenOverlay1.png);*/
-    background: #3e2c25;
+    background: rgba(35, 26, 23, 0.75);
     border: 1px solid #291c17;
     width: 36%;
     max-width: 130%;
@@ -4949,23 +4949,23 @@ fieldset[disabled] a.btn {
 
 .btn-default:focus,
 .btn-default.focus {
-    color: #333333;
-    background-color: #cecece;
-    border-color: #8c8c8c;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .btn-default:hover {
-    color: #333333;
-    background-color: #cecece;
-    border-color: #adadad;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    color: #333333;
-    background-color: #cecece;
-    border-color: #adadad;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .btn-default:active:hover,
@@ -4977,9 +4977,9 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-    color: #333333;
-    background-color: #bcbcbc;
-    border-color: #8c8c8c;
+    color: #8c8989;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .btn-default:active,
@@ -9394,7 +9394,7 @@ button.close {
 }
 
 .navbar-default .dropdown-menu {
-    background-color: #333333;
+    background-color: rgba(2, 2, 2, 0.37);
 }
 
 .navbar-default .dropdown-menu > li > a,
@@ -9405,7 +9405,7 @@ button.close {
 .navbar-default .dropdown-menu > li > a:hover,
 .navbar-default .dropdown-menu > .active > a,
 .navbar-default .dropdown-menu > .active > a:hover {
-    background-color: #272727;
+    background-color: rgba(36, 36, 36, 0.63);
 }
 
 .navbar-inverse .dropdown-menu {
