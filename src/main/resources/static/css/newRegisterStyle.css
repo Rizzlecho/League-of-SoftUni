@@ -1,0 +1,93 @@
+/*custom font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+* {
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+html {
+    height:100%;
+
+}
+
+body {
+
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    background: url("../img/blackandwhite.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+/*form styles*/
+#msform {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+#msform fieldset {
+    background: #3a3838;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: auto;
+    margin-top: 64%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+    padding: 15px;
+    border: 1px solid #272424;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+
+    color: #d8d8d8;
+    font-size: 15px;
+    background-color: #5d5d5d;
+}
+/*buttons*/
+#msform .action-button {
+    width: 100px;
+    background: #1a564a;
+    font-weight: bold;
+    color: #e4e4e4;
+    border: 1px solid #383c3a;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+    box-shadow: 0 0 0 2px #3c3b3b;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #a2a2a2;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" th:href="@{/css/newRegisterStyle.css}" type="text/css"/>
+</head>
+
+<main>
+    <a th:href="@{/}">
+        <img src="/img/LeagueOfSoftuni.png" class="navbar-brand"
+             style="position: fixed; width:19%; height:auto; margin-top: -11%; margin-left: 42.5%;"/></a>
+    <form id="msform" th:action="@{/register}" method="post">
+        <fieldset>
+            <h2 class="fs-title">Create your account</h2>
+            <br/>
+            <input type="text" placeholder="Username" name="username" required="required"/>
+            <input type="email" placeholder="Email" name="email" required="required"/>
+            <input type="password" placeholder="Password" name="Password" required="required"/>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required="required"/>
+
+            <input type="submit" name="register" class="next action-button" value="Register"/>
+        </fieldset>
+    </form>
+</main>
+

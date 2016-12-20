@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>SoftUni League</title>
+    <link rel="icon" href="/img/L.jpg"/>
+
+    <link rel="stylesheet" th:href="@{/css/uploadStyle.css}" type="text/css"/>
+    <link rel="stylesheet" th:href="@{/css/loginStyle.css}" type="text/css"/>
+
+
+</head>
+
+<body>
+
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" align="center">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Begin # DIV Form -->
+            <div id="div-forms">
+
+                <!-- Begin # Login Form -->
+                <form class="login-form" th:action="@{/}" method="post">
+                    <div class="modal-body">
+                        <div id="div-login-msg">
+                            <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-login-msg">Type your username and password.</span>
+                        </div>
+                        <input id="login_username" class="form-control" type="text"
+                               placeholder="Username (type ERROR for error effect)"/>
+                        <input id="login_password" class="form-control" type="password" placeholder="Password"/>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"/> Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                        </div>
+                        <div>
+                            <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                            <button id="login_register_btn" type="button" class="btn btn-link"></button>
+                        </div>
+                    </div>
+                </form>
+                <!-- End # Login Form -->
+
+                <!-- Begin | Lost Password Form -->
+                <form id="lost-form" style="display:none;">
+                    <div class="modal-body">
+                        <div id="div-lost-msg">
+                            <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-lost-msg">Type your e-mail.</span>
+                        </div>
+                        <input id="lost_email" class="form-control" type="text"
+                               placeholder="E-Mail (type ERROR for error effect)"/>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                        </div>
+                        <div>
+                            <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                            <button id="lost_register_btn" type="button" class="btn btn-link"></button>
+                        </div>
+                    </div>
+                </form>
+                <!-- End | Lost Password Form -->
+
+
+            </div>
+            <!-- End # DIV Form -->
+
+        </div>
+    </div>
+</div>
+<!-- END # MODAL LOGIN -->
+
+
+<nav class="navbar-right navbar-default navbar-fixed-top ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="../homeIndex.html">
+                <img src="/img/LeagueOfSoftuni.png" class="navbar-brand"
+                     style="position: fixed; width:19%; height:auto;"/></a>
+
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a role="menuitem" tabindex="-1" th:href="@{/}">Home</a></li>
+            <li><a role="menuitem" tabindex="-1" th:href="@{/gallery}">Gallery</a></li>
+            <li><a role="menuitem" tabindex="-1" th:href="@{/lore}">Lore</a></li>
+            <li><a role="menuitem" tabindex="-1" th:href="@{/contact}">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a role="menuitem" tabindex="-1" th:href="@{/upload}"><span
+                    class="glyphicon glyphicon-picture"></span> Upload</a></li>
+            <li><a role="menuitem" tabindex="-1" th:href="@{/register}"><span
+                    class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#login-modal"><span
+                    class="glyphicon glyphicon-user"></span> Login</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Page responsive dropdown -->
+    <div class="imageBokluk">
+        <a href="../homeIndex.html">
+            <img src="/img/LeagueOfSoftuni.png" class="navbar-brand"
+                 style="width:19%; height:auto;"/></a>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"><span
+                    class="glyphicon glyphicon-th-list"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation"><a th:href="@{/}">Home</a></li>
+                <li role="presentation"><a th:href="@{/gallery}">Gallery</a></li>
+                <li role="presentation"><a th:href="@{/lore}">Lore</a></li>
+                <li role="presentation"><a th:href="@{/contact}">Contact</a></li>
+                <li class="active"><a role="menuitem" tabindex="-1" th:href="@{/upload}"><span
+                        class="glyphicon glyphicon-picture"></span> Upload</a></li>
+                <li><a role="menuitem" tabindex="-1" th:href="@{/register}"><span
+                        class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a role="menuitem" tabindex="-1" href="#" data-toggle="modal" data-target="#login-modal"><span
+                        class="glyphicon glyphicon-user"></span> Login</a></li>
+
+            </ul>
+
+        </div>
+    </div>
+
+</nav>
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="fon">
+
+    <form class="col-md-offset-4" style="margin-left: 7%">
+        <div class="form-group">
+            <label1 for="exampleTextarea">Title</label1>
+            <textarea class="form-control1" id="exampleTextarea" rows="1" placeholder="Add your title." required="required"></textarea>
+        </div>
+        <div class="form-group">
+            <label1 for="exampleTextarea">Description</label1>
+            <textarea class="form-control1" id="exampleTextarea1" rows="2" style="padding-bottom: 70px"
+                      placeholder="Add your description." required="required"></textarea>
+        </div>
+        <div class="form-group">
+            <label1 for="exampleInputFile">File input</label1>
+            <input style="width: 90%; background-color: rgba(58, 58, 58, 0.49);
+    border: 1px solid rgba(81, 82, 82, 0.52);" type="file" class="form-control-file btn btn-primary1"
+                   id="exampleInputFile" aria-describedby="fileHelp" required="required"/>
+        </div>
+        <br/>
+        <button type="submit" class="btn btn-lg btn-primary1">Upload</button>
+    </form>
+</div>
+</body>
+</html>
