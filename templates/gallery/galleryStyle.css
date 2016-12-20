@@ -1102,18 +1102,19 @@ Image credits: unsplash.com
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
     font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 
-    background: url("../../images/bildgewaterGallery.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
 }
 body {
     margin: 0;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    background: url("../../images/shadowIsles.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 article,
 aside,
@@ -8196,4 +8197,14 @@ input[type="checkbox"] {
         border-color: transparent;
     }
 }
+
+
+
+
+
+
+
+
+
+
 

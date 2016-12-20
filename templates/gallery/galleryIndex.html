@@ -7,11 +7,11 @@
 
     <link rel="stylesheet" href="galleryStyle.css">
     <link rel="stylesheet" href="../user/login/loginStyle.css">
+    <link rel="stylesheet" href="imageModal.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../home/bootstrap.js"></script>
     <script src="../user/login/login.js"></script>
-
 
 </head>
 
@@ -135,11 +135,14 @@
             <li><a role="menuitem" tabindex="-1" href="../contact/contactIndex.html">Contact</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li><a role="menuitem" tabindex="-1" href="../upload/uploadIndex.html"><span class="glyphicon glyphicon-picture"></span> Upload</a></li>
-            <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal" data-target="#login-modal"><span
-                    class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
-            <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal" data-target="#login-modal"><span
-                    class="glyphicon glyphicon-user" ></span> Login</a></li>
+            <li><a role="menuitem" tabindex="-1" href="../upload/uploadIndex.html"><span
+                    class="glyphicon glyphicon-picture"></span> Upload</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal"
+                   data-target="#login-modal"><span
+                    class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal"
+                   data-target="#login-modal"><span
+                    class="glyphicon glyphicon-user"></span> Login</a></li>
         </ul>
     </div>
 
@@ -160,10 +163,12 @@
                 <li role="presentation"><a href="../contact/contactIndex.html">Contact</a></li>
                 <li role="presentation"><a href="../upload/uploadIndex.html">Upload</a></li>
 
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal" data-target="#login-modal"><span
-                        class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal" data-target="#login-modal"><span
-                        class="glyphicon glyphicon-user" ></span> Login</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal"
+                                           data-target="#login-modal"><span
+                        class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#" role="button" data-toggle="modal"
+                                           data-target="#login-modal"><span
+                        class="glyphicon glyphicon-user"></span> Login</a></li>
             </ul>
 
         </div>
@@ -172,6 +177,26 @@
 
 </nav>
 
+<div class="col-md-offset-6">
+
+    <!-- Trigger the Modal -->
+    <img id="myImg1" src="../../images/nakus.png" alt="Nakus" width="auto" height="200">
+
+    <!-- The Modal -->
+    <div id="myModal1" class="modal1">
+
+        <!-- The Close Button -->
+        <span class="close1" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content1" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption1"></div>
+    </div>
+</div>
+
+<script src="imageModal.js"></script>
 
 </body>
 </html>
